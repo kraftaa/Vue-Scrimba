@@ -33,7 +33,15 @@ img {
 	<body>
 
 		<div id="app">
-			<p v-html="incendio(lumos(wizard))"></p>
+			<p
+				v-html="wizard + ' ' + (
+					wizard == harry    ? hedwig      :
+					wizard == ron      ? scabbers    :
+					wizard == hermione ? crookshanks : ''
+				)"
+			></p>
+
+
 		</div>
 
 		<script src="js/script.js"></script>
