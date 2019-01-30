@@ -20,6 +20,10 @@ var app = new Vue({
     el: "#app",
     data: {
         wizard: emojify("wizard")
+    },
+    methods: {
+        lumos: cast(emojify("lumos")),
+        incendio: cast(emojify("incendio"))
     }
 })
 
