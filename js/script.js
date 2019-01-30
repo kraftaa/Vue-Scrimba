@@ -16,6 +16,10 @@ function emojify(name) {
 //     }
 // }
 
+Vue.component("harry", {
+    template: `<p>` + emojify("harry") + `</p>`
+})
+
 var app = new Vue({
     el: "#app",
     data: {
