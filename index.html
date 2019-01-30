@@ -33,13 +33,11 @@ img {
 	<body>
 
 		<div id="app">
-			<p
-				v-html="wizard + ' ' + (
-					wizard == harry    ? hedwig      :
-					wizard == ron      ? scabbers    :
-					wizard == hermione ? crookshanks : ''
-				)"
-			></p>
+			<template v-if="true">
+				<p v-html="harry    + ' ' + hedwig     "></p>
+				<p v-html="ron      + ' ' + scabbers   "></p>
+				<p v-html="hermione + ' ' + crookshanks"></p>
+			</template>
 
 
 		</div>
