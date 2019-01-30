@@ -31,18 +31,14 @@ img {
 
 		</style>
 	</head>
-	<body>
-
-		<div class="app" :class="theme()">
-			<p>
-				Click the box!<br>
-				The cat's...<!--
-			 --><span
-					v-html="cat"
-					@click="quantum_fluctuation()" :class="jittering()"
-				></span><!--
-			 -->!
-			</p>
+	<!-- <body debug> -->
+    <body>
+		<div id="app" :style="gradient(active)">
+			<swatch
+				v-for="swatch in swatches"
+				@click.native="activate(swatch)"
+				:active="active" :swatch="swatch" :effect="gradient"
+			></swatch>
 		</div>
 
 		<script src="js/script.js"></script>
