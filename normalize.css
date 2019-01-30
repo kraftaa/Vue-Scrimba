@@ -307,3 +307,12 @@ button.__active {
 ::selection {
   background-color: #75aaff;
 }
+
+.breathe--man { animation: breathe 4.0s infinite; }
+.breathe--dog { animation: breathe 0.5s infinite; }
+
+@keyframes breathe {
+    0% { transform: scale(0.95); }
+   50% { transform: scale(1.05); }
+  100% { transform: scale(0.95); }
+}

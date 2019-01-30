@@ -32,10 +32,10 @@ img {
 	</head>
 	<body>
 
-		<div id="app">
-            <wizard :name="harry"    :cast="oculus_reparo"     ></wizard>
-			<wizard :name="ron"      :cast="wingardium_leviosa"></wizard>
-			<wizard :name="hermione" :cast="alohomora"         ></wizard>
+		<div id="app" :style="{ background: background() }">
+
+			<p v-html="active" @click="animagus" :class="breathe()"></p>
+
 		</div>
 
 		<script src="js/script.js"></script>
